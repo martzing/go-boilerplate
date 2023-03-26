@@ -1,8 +1,8 @@
 package schedule
 
 import (
+	"github.com/martzing/go-boilerplate/controller/postgres"
 	"github.com/martzing/go-boilerplate/job"
-	"github.com/martzing/go-boilerplatee/controller/postgres"
 )
 
 var ExampleTask = []job.Schedule{
