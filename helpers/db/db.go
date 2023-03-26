@@ -3,24 +3,16 @@ package dbHelper
 import (
 	"fmt"
 
+	"github.com/martzing/go-boilerplate/configs"
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 	"gorm.io/gorm/schema"
 )
 
-type DBConfig struct {
-	Host     string
-	Port     int
-	Username string
-	Password string
-	DBName   string
-	TimeZone string
-}
-
 var DB *gorm.DB
 
-func NewDatabase(dbConfig DBConfig) {
+func NewDatabase(dbConfig configs.DBConfig) {
 	dsn := fmt.Sprintf("host=%s port=%d user=%s password=%s dbname=%s TimeZone=%s",
 		dbConfig.Host,
 		dbConfig.Port,

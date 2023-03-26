@@ -53,7 +53,7 @@ func (dbTxn *DatabaseTransaction) Begin() {
 	logger := utilityHelper.NewLogger()
 	transactionId := uuid.New().String()
 
-	NewDatabase(*configs.DBConfig)
+	NewDatabase(*configs.Database)
 
 	db := DB
 

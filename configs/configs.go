@@ -5,7 +5,7 @@ var ServiceName *string
 var Port *int
 var EnableQueue *bool
 var EnableJob *bool
-var DBConfig *DBConfig
+var Database *DBConfig
 var Redis *RedisConfig
 var MongoDB *MongoDbConfig
 
@@ -16,7 +16,7 @@ func BootConfig() {
 	Port = env.GetInt("PORT", 3000)
 	EnableQueue = env.GetBool("ENABLE_QUEUE", false)
 	EnableJob = env.GetBool("ENABLE_JOB", false)
-	DBConfig = &DBConfig{
+	Database = &DBConfig{
 		Host:     *env.GetString("POSTGRES_HOST"),
 		Port:     *env.GetInt("POSTGRES_PORT"),
 		Username: *env.GetString("POSTGRES_USER"),
