@@ -1,0 +1,18 @@
+{
+  "share": {
+    "error": {
+      "invalid parameter": "Please fill valid parameter.",
+      "internal unhandle": "Something went wrong, Please contact support.",
+      "too many requests": "Too many requests. Please wait a moment and try again.",
+      "forbidden": "You don't have permission to access this resource"
+    }
+  },
+  "user": {
+    "response": {
+      "delete user success": "Delete the user successfully"
+    },
+    "error": {
+      "user not found": "User is not found"
+    }
+  }
+}
